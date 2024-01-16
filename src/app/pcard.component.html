@@ -1,12 +1,16 @@
 <div class="pcard">
   <div
     class="product-image"
-    style="background-image: url('assets/demo-image.webp');"
+    [ngStyle]="{'background-image': 'url(' + pImage + ')'}"
   >
     <div class="percentpill">-30%</div>
     <img src="assets/heart.svg" class="heart" />
   </div>
-  <span class="product-price">xgxfg</span>
-  <span class="product-name">dfghdf</span>
-  <span class="product-description">dfghd</span>
+  <div class="product-textarea">
+    <span class="product-price">{{ pPrice }}</span>
+    <span class="product-old-price">{{ oldPrice }}</span>
+    <p class="product-brand">{{ brand }}</p>
+    <p class="product-name">{{ pName }}</p>
+    <p class="product-description">{{ pDescription }}</p>
+  </div>
 </div>

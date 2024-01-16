@@ -5,6 +5,7 @@
   width: 32%;
 }
 .pcard {
+  position: static;
   padding: 0;
   height: 27rem;
 }
@@ -16,27 +17,53 @@ div.percentpill {
   color: white;
   border-radius: 1rem;
 }
+
 img.heart {
-  z-index: 1000;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  height: 1.4rem;
+  width: 5%;
+  float: right;
+  margin: 1rem 1rem auto auto;
 }
+
 div.product-image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 27rem;
 }
-.product-description {
-  overflow: hidden;
+.product-textarea {
+  float: left;
+  padding: 1rem;
+  position: relative;
+  max-width: 100%;
+}
+
+.product-textarea p {
+  float:left;
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1rem;
   white-space: nowrap;
+}
+.product-price {
+  font-weight: bold;
+  color: var(--normal-price-green);
+}
+.product-old-price {
+  padding-left: 0.5rem;
+  color: grey;
+  text-decoration: line-through;
+}
+.product-brand, .product-name, .product-description {
+  float: left;
+  width: 95%;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
-span {
-  width: 100%;
-  float:left;
-  margin: 0.5rem;
-  font-size: 1rem;
+.product-brand {
+  font-weight: bold;
+}
+.product-name {
+
+}
+.product-description {
 }
