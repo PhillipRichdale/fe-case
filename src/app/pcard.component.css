@@ -1,6 +1,6 @@
 :host {
   border: solid 1px lightgrey;
-  margin: 1%;
+  margin: auto auto 1rem 1rem;
   padding: 0;
   width: 32%;
 }
@@ -55,7 +55,7 @@ div.product-image {
 }
 .product-brand, .product-name, .product-description {
   float: left;
-  width: 95%;
+  width: 93%;
   overflow: hidden;
   text-overflow: ellipsis;
 }
