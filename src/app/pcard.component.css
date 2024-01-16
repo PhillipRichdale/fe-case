@@ -1,0 +1,42 @@
+:host {
+  border: solid 1px lightgrey;
+  margin: 1%;
+  padding: 0;
+  width: 32%;
+}
+.pcard {
+  padding: 0;
+  height: 27rem;
+}
+div.percentpill {
+  padding: 0.5rem;
+  margin: 1rem auto auto 1rem;
+  float: left;
+  background-color: var(--reduced-red);
+  color: white;
+  border-radius: 1rem;
+}
+img.heart {
+  z-index: 1000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  height: 1.4rem;
+}
+div.product-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 27rem;
+}
+.product-description {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+span {
+  width: 100%;
+  float:left;
+  margin: 0.5rem;
+  font-size: 1rem;
+}

@@ -1,0 +1,46 @@
+:host {
+  padding: 0;
+  --standard-padding: 1rem;
+  --reduced-red: #e84747;
+);
+
+  --pill-accent: var(--bright-blue);
+
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} /** <-host end **/
+
+/** Default: Tablet **/
+main {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+div.content {
+  margin: 0;
+  padding: 0;
+}
+header {
+  margin: 0;
+  padding: var(--standard-padding);
+  border-bottom: solid 1px lightgrey;
+  max-height: 4rem;
+}
+img.logo {
+  height: 2.5rem;
+}
+@media (min-width: 581px) {
+  .pcard {
+    width: 30%;
+    height: 35rem;
+  }
+}
