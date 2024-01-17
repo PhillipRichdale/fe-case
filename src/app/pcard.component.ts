@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pcard.component.css'
 })
 export class PcardComponent {
-  /** TODO: Spoof Data - remove in production **/
+  /** TODO: Spoof Data for viewtests- remove in production **/
   pImage = "/assets/demo-image.webp";
   pPrice = "37,50";
   oldPrice ="45,50";

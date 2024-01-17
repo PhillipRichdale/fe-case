@@ -1,5 +1,6 @@
 :host {
   --standard-padding: 1rem;
+  --spinner-color: grey;
   --reduced-red: #e84747;
   --normal-price-green: #00aa7a;
   --product-color-beige: #e1c699;
