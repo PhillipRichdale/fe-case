@@ -1,5 +1,5 @@
 :host {
-  border: solid 1px lightgrey;
+  /** border: solid 1px lightgrey; **/
   margin: auto auto 1rem 1rem;
   padding: 0;
   width: 32%;

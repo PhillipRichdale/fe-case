@@ -3,7 +3,7 @@
     class="product-image"
     [ngStyle]="{'background-image': 'url(' + pImage + ')'}"
   >
-    <div class="percentpill">-30%</div>
+    <div class="percentpill" *ngIf="pPercent">{{ pPercent }}</div>
     <img src="assets/heart.svg" class="heart" />
   </div>
   <div class="product-textarea">

@@ -3,9 +3,13 @@
 </header>
 <div class="container">
     <main>
-      <li *ngFor="let item of remoteData">
-        {{ item.articleNumber }}
-      </li>
+      <pcard
+        *ngFor="let item of remoteData"
+        [allPrices]="item.allPrices"
+        [pImage]="item.images[0].url"
+        [brand]="item.brandName"
+        [pDescription]="item.description"
+      ></pcard>
   </main>
   <spinner [showSpinner]="showSpinner()"></spinner>
 </div>

@@ -25,4 +25,6 @@ export class AppComponent implements OnInit {
   }
   protected readonly JSON = JSON;
   item: any;
+  protected readonly Math = Math;
+  protected readonly String = String;
 }

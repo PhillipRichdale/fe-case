@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,11 +9,26 @@ import { CommonModule } from '@angular/common';
   styleUrl: './pcard.component.css'
 })
 export class PcardComponent {
-  /** TODO: Spoof Data for viewtests- remove in production **/
-  pImage = "/assets/demo-image.webp";
-  pPrice = "37,50";
-  oldPrice ="45,50";
-  brand = "bench";
-  pName = "Streetwalker Pro"
-  pDescription = "slip on and tie - Dieser Satz kein Verb. Das Pferd ist vorne hinten als höher. Je höher desto Platsch."
+  @Input() pImage = "";
+  @Input() allPrices = new Array();
+  pPrice = "";
+  oldPrice = "";
+  lowPval = 0;
+  highPval = 0;
+  pPercent = "";
+  @Input() brand = "";
+  @Input() pName = ""
+  @Input() pDescription = ""
+  ngOnChanges(): void {
+    let isReduced = this.allPrices.length > 1;
+    if (isReduced) {
+      this.lowPval = Math.min(this.allPrices[0].value, this.allPrices[1].value);
+      this.highPval = Math.max(this.allPrices[0].value, this.allPrices[1].value);
+      this.pPercent = "- "+String(Math.floor( 100 - this.lowPval / this.highPval * 100))+"%";
+    }
+
+    this.pPrice = isReduced ? String(this.lowPval).replace('.',',') + ' €' : this.allPrices[0].formattedValue;
+    this.oldPrice = isReduced ? String(this.highPval).replace('.',',') + ' €' : "";
+    this.pDescription = this.pDescription.replace(/(<([^>]+)>)/gi, " ");
+  }
 }
