@@ -12,5 +12,10 @@
     <p class="product-brand">{{ brand }}</p>
     <p class="product-name">{{ pName }}</p>
     <p class="product-description">{{ pDescription }}</p>
+    <p class="product-colors">
+      <span *ngFor="let pCol of pcClasses"
+      class="{{pCol}}"
+      >⏺</span>
+    </p>
   </div>
 </div>

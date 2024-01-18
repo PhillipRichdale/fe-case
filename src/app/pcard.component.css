@@ -67,3 +67,26 @@ div.product-image {
 }
 .product-description {
 }
+.product-colors {
+  float: left;
+  width: 100%;
+}
+.product-colors,  .product-colors span {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  line-height: 2rem;
+  letter-spacing: -4px;
+  cursor: pointer;
+}
+.product-color-beige { color: #e1c699; }
+.product-color-blue { color: #2540af; }
+.product-color-fuchsia { color: #de1c79; }
+.product-color-green { color: #56a53a; }
+.product-color-purple { color: #7a2c96; }
+.product-color-red { color: #dc0d00; }
+.product-color-black { color: #000; }
+.product-color-grey { color: grey; }
+.product-color-pink { color: deeppink; }
+.product-color-olive { color: darkolivegreen; }
+.product-color-white { color: #fff; text-shadow: 0 0 2px black; }

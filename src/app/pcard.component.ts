@@ -19,6 +19,8 @@ export class PcardComponent {
   @Input() brand = "";
   @Input() pName = ""
   @Input() pDescription = ""
+  @Input() pColors = new Array();
+  pcClasses = new Array();
   ngOnChanges(): void {
     let isReduced = this.allPrices.length > 1;
     if (isReduced) {
@@ -30,5 +32,15 @@ export class PcardComponent {
     this.pPrice = isReduced ? String(this.lowPval).replace('.',',') + ' €' : this.allPrices[0].formattedValue;
     this.oldPrice = isReduced ? String(this.highPval).replace('.',',') + ' €' : "";
     this.pDescription = this.pDescription.replace(/(<([^>]+)>)/gi, " ");
+
+    /**
+    this.pColors.map((item) => {
+      return String(item.code).replace("filter-", ".product-color-");
+    });
+    **/
+
+    for (var i = 0; i < this.pColors.length; i++) {
+      this.pcClasses.push(String(this.pColors[i].code).replace("filter-", "product-color-"));
+    }
   }
 }

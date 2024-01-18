@@ -3,13 +3,6 @@
   --spinner-color: grey;
   --reduced-red: #e84747;
   --normal-price-green: #00aa7a;
-  --product-color-beige: #e1c699;
-  --product-color-blue: #2540af;
-  --product-color-fuchsia: #de1c79;
-  --product-color-green: #56a53a;
-  --product-color-purple: #7a2c96;
-  --product-color-red: #dc0d00;
-);
 
   --pill-accent: var(--bright-blue);
 
@@ -40,6 +33,7 @@ header {
 img.logo {
   height: 2.5rem;
 }
+
 /** Desktop **/
 @media (min-width: 581px) {
   .container {
