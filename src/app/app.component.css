@@ -35,14 +35,8 @@ img.logo {
 }
 
 /** Desktop **/
-@media (min-width: 581px) {
+@media screen and (min-width: 1250px){
   .container {
     margin: 1vw 12vw;
-  }
-  main {
-  }
-  .pcard:host {
-    width: 32%;
-    height: 35rem;
   }
 }
